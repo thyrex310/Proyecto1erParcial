@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración de la versión XML y codificación de caracteres UTF-8 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Contenedor principal del diseño, un LinearLayout con orientación vertical -->
+    <!-- match_parent: hace que el contenedor ocupe todo el ancho y alto de la pantalla -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+
+    <Button
+        android:id="@+id/btnPractica1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 1: Hola Mundo" />
+    <!-- Botón que inicia la práctica 1: muestra un mensaje de "Hola Mundo" -->
+    <!-- match_parent: ocupa todo el ancho disponible -->
+    <!-- wrap_content: ajusta la altura al contenido del botón -->
+    <!-- android:text: establece el texto visible en el botón -->
+
+    <Button
+        android:id="@+id/btnPractica2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 2: Contador de Clicks" />
+    <!-- Botón para iniciar la práctica 2: un contador que aumenta con los clics -->
+
+    <Button
+        android:id="@+id/btnPractica3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 3: Contador con Temporizador" />
+    <!-- Botón para la práctica 3: un contador que funciona con un temporizador -->
+
+    <Button
+        android:id="@+id/btnPractica4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 4: Historial en Archivo de Texto" />
+    <!-- Botón para la práctica 4: manejo de historial guardado en un archivo de texto -->
+
+    <Button
+        android:id="@+id/btnPractica5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 5: Almacenamiento en SQLite" />
+    <!-- Botón para la práctica 5: almacenamiento de datos en una base de datos SQLite -->
+
+    <Button
+        android:id="@+id/btnPractica6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 6: Historial en SQLite" />
+    <!-- Botón para la práctica 6: gestión de historial usando una base de datos SQLite -->
+
+</LinearLayout>

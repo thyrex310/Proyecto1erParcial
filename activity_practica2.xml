@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: hace que el contenedor ocupe toda la pantalla en ancho y alto -->
+    <!-- gravity="center": centra los elementos dentro del LinearLayout -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+
+    <!-- Texto para mostrar el contador -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contador: 0"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp" />
+    <!-- TextView: Muestra el valor del contador en la pantalla -->
+    <!-- id="@+id/tvCounter": Identificador para referenciarlo en código -->
+    <!-- wrap_content: Ajusta el tamaño al contenido del texto -->
+    <!-- text="Contador: 0": Texto inicial que muestra el contador en 0 -->
+    <!-- textSize="24sp": Define el tamaño del texto -->
+    <!-- layout_marginBottom="20dp": Agrega un margen inferior de 20dp para separación -->
+
+    <!-- Botón para incrementar el contador -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haz Clic" />
+    <!-- Botón que incrementará el contador cada vez que se presione -->
+    <!-- id="@+id/btnIncrement": Identificador del botón para manejar su funcionalidad -->
+    <!-- wrap_content: Ajusta el tamaño del botón según su contenido -->
+    <!-- text="Haz Clic": Texto que aparecerá en el botón -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:layout_marginTop="20dp" />
+    <!-- Botón que permitirá regresar al menú principal -->
+    <!-- id="@+id/btnBackToMenu": Identificador del botón -->
+    <!-- wrap_content: Ajusta el tamaño del botón según su contenido -->
+    <!-- text="Volver al Menú": Texto que aparecerá en el botón -->
+    <!-- layout_marginTop="20dp": Agrega un margen superior de 20dp para separación -->
+
+</LinearLayout>

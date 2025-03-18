@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: ocupa todo el ancho y alto de la pantalla -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+
+    <!-- Texto que muestra el tiempo restante -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Tiempo restante: 10 segundos"
+        android:textSize="18sp" />
+    <!-- id="@+id/tvTimer": Identificador del TextView -->
+    <!-- text="Tiempo restante: 10 segundos": Texto inicial del temporizador -->
+    <!-- textSize="18sp": Tamaño de la fuente -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Botón para iniciar el temporizador -->
+    <Button
+        android:id="@+id/btnStartTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Iniciar Temporizador" />
+    <!-- id="@+id/btnStartTimer": Identificador del botón -->
+    <!-- text="Iniciar Temporizador": Texto del botón -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Texto que muestra el valor del contador -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Contador: 0"
+        android:textSize="24sp" />
+    <!-- id="@+id/tvCounter": Identificador del TextView -->
+    <!-- text="Contador: 0": Texto inicial del contador -->
+    <!-- textSize="24sp": Tamaño de la fuente -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Botón para incrementar el contador -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Haz Clic" />
+    <!-- id="@+id/btnIncrement": Identificador del botón -->
+    <!-- text="Haz Clic": Texto del botón -->
+    <!-- enabled="false": Inicialmente deshabilitado hasta que inicie el temporizador -->
+
+    <!-- Texto para indicar la sección de mejores puntuaciones -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mejores 5 Scores:"
+        android:textSize="18sp" />
+    <!-- text="Mejores 5 Scores:": Indica la sección de puntajes -->
+    <!-- textSize="18sp": Tamaño de la fuente -->
+    <!-- layout_marginTop="20dp": Margen superior para separación -->
+    <!-- layout_marginBottom="10dp": Margen inferior para separación -->
+
+    <!-- Lista para mostrar los mejores puntajes -->
+    <ListView
+        android:id="@+id/lvScores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1" />
+    <!-- id="@+id/lvScores": Identificador del ListView -->
+    <!-- scaleX="1": Escala estándar para la vista de lista -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Volver al Menú" />
+    <!-- id="@+id/btnBackToMenu": Identificador del botón -->
+    <!-- text="Volver al Menú": Texto que aparece en el botón -->
+    <!-- layout_marginTop="20dp": Margen superior para separación -->
+
+</LinearLayout>

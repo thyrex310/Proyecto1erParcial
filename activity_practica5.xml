@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: ocupa todo el ancho y alto de la pantalla -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+
+    <!-- Campo de texto para ingresar el nombre -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:minHeight="48dp" />
+    <!-- id="@+id/etName": Identificador del campo de texto -->
+    <!-- hint="Nombre": Muestra un texto guía dentro del campo -->
+    <!-- minHeight="48dp": Altura mínima del campo para mayor usabilidad -->
+
+    <!-- Campo de texto para ingresar la edad -->
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number"
+        android:minHeight="48dp" />
+    <!-- id="@+id/etAge": Identificador del campo de texto -->
+    <!-- hint="Edad": Texto guía que indica el dato a ingresar -->
+    <!-- inputType="number": Restringe la entrada a solo números -->
+    <!-- minHeight="48dp": Altura mínima del campo -->
+
+    <!-- Botón para agregar datos a la lista -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar" />
+    <!-- id="@+id/btnAdd": Identificador del botón -->
+    <!-- text="Agregar": Texto que se muestra en el botón -->
+
+    <!-- Lista donde se mostrarán los elementos ingresados -->
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- id="@+id/lvItems": Identificador del ListView -->
+    <!-- match_parent: Ocupa todo el ancho disponible -->
+    <!-- wrap_content: Ajusta la altura según el contenido -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:layout_marginTop="20dp" />
+    <!-- id="@+id/btnBackToMenu": Identificador del botón -->
+    <!-- text="Volver al Menú": Texto que aparece en el botón -->
+    <!-- layout_marginTop="20dp": Margen superior para separación -->
+
+</LinearLayout>

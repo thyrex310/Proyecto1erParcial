@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: hace que el contenedor ocupe toda la pantalla en ancho y alto -->
+    <!-- gravity="center": centra los elementos dentro del LinearLayout -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+
+    <!-- Texto "Hola Mundo" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola Mundo"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp" />
+    <!-- TextView: muestra un mensaje en pantalla -->
+    <!-- wrap_content: ajusta el tamaño al contenido del texto -->
+    <!-- text="Hola Mundo": define el texto que se mostrará -->
+    <!-- textSize="24sp": establece el tamaño del texto en 24sp -->
+    <!-- layout_marginBottom="20dp": agrega un margen inferior de 20dp para separación -->
+
+    <!-- Botón para regresar al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú" />
+    <!-- Botón que permitirá volver al menú principal -->
+    <!-- id="@+id/btnBackToMenu": identificador del botón para referenciarlo en código -->
+    <!-- wrap_content: ajusta el ancho y alto según el contenido del botón -->
+    <!-- text="Volver al Menú": define el texto que se mostrará en el botón -->
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: hace que el contenedor ocupe toda la pantalla en ancho y alto -->
+    <!-- gravity="center": centra los elementos dentro del LinearLayout -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+
+    <!-- Texto que muestra el tiempo restante en la cuenta regresiva -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo restante: 10 segundos"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+    <!-- id="@+id/tvTimer": Identificador del TextView para manejar su funcionalidad -->
+    <!-- wrap_content: Ajusta el tamaño del TextView al contenido -->
+    <!-- text="Tiempo restante: 10 segundos": Texto inicial del temporizador -->
+    <!-- textSize="18sp": Define el tamaño del texto -->
+    <!-- layout_marginBottom="20dp": Agrega un margen inferior de 20dp para separación -->
+
+    <!-- Botón para iniciar el temporizador -->
+    <Button
+        android:id="@+id/btnStartTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Temporizador"
+        android:layout_marginBottom="20dp" />
+    <!-- id="@+id/btnStartTimer": Identificador del botón -->
+    <!-- wrap_content: Ajusta el tamaño del botón según su contenido -->
+    <!-- text="Iniciar Temporizador": Texto que aparece en el botón -->
+    <!-- layout_marginBottom="20dp": Agrega un margen inferior para separar del siguiente elemento -->
+
+    <!-- Texto que muestra el valor del contador -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contador: 0"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp" />
+    <!-- id="@+id/tvCounter": Identificador del TextView del contador -->
+    <!-- wrap_content: Ajusta el tamaño del TextView al contenido -->
+    <!-- text="Contador: 0": Texto inicial del contador -->
+    <!-- textSize="24sp": Define el tamaño del texto -->
+    <!-- layout_marginBottom="20dp": Espacio debajo del texto -->
+
+    <!-- Botón para incrementar el contador (desactivado inicialmente) -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haz Clic"
+        android:enabled="false" />
+    <!-- id="@+id/btnIncrement": Identificador del botón para incrementar el contador -->
+    <!-- wrap_content: Ajusta el tamaño del botón al contenido -->
+    <!-- text="Haz Clic": Texto que aparece en el botón -->
+    <!-- enabled="false": Deshabilita el botón al inicio, solo se activará cuando inicie el temporizador -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:layout_marginTop="20dp" />
+    <!-- id="@+id/btnBackToMenu": Identificador del botón -->
+    <!-- wrap_content: Ajusta el tamaño del botón según su contenido -->
+    <!-- text="Volver al Menú": Texto que aparece en el botón -->
+    <!-- layout_marginTop="20dp": Agrega un margen superior de 20dp para separación -->
+
+</LinearLayout>
